@@ -1,6 +1,5 @@
 FROM golang:1.9
 
-# Set go bin which doesn't appear to be set already.
-# ENV GOBIN /go/bin
+LABEL maintainer "Andrew Tarasenko andrexus@gmail.com"
 
 RUN go get -u github.com/golang/dep/cmd/dep
